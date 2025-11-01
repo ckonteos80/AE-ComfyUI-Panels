@@ -1,11 +1,3 @@
-ckonteos80: Can you write a readme file for a github page for this panel?
-
-Workspace: Enable Claude Sonnet 4 for all clients
-[object Object]
-
-ckonteos80: @workspace Enable: "Enable Claude Sonnet 4 for all clients"
-
-Workspace: Collecting workspace information# ComfyUI Image2Image Panel for After Effects
 
 A powerful After Effects panel that enables AI-powered image-to-image generation using ComfyUI directly within your AE workflow. Transform your compositions with AI without leaving After Effects!
 
