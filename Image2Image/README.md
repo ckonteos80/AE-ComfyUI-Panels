@@ -2,7 +2,7 @@
 A powerful After Effects panel that enables AI-powered image-to-image generation using ComfyUI directly within your AE workflow. Transform your compositions with AI without leaving After Effects!
 
 <p align="center">
-  <img src="Screenshots/Image2ImagePanel.jpg" width="700" alt="ComfyUI Panel UI">
+  <img src="![Panel UI](https://github.com/ckonteos80/AE-ComfyUI-Panels/blob/main/Screenshots/Image2ImagePanel.jpg?raw=true)">
 </p>
 
 ## 🌟 Features
