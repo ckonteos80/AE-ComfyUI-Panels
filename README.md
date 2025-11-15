@@ -27,6 +27,8 @@ Depending on the panel, AE can:
 
 This lets you build hybrid pipelines combining AE animation with AI-driven visuals.
 
+![Image2ImagePanel](https://github.com/user-attachments/assets/e6b77c8d-904a-48c6-9512-8705dc3a206c)
+
 ---
 
 ## ✨ **Features**
