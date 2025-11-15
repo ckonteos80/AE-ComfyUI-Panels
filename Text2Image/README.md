@@ -2,6 +2,8 @@
 
 A ScriptUI panel that brings text-to-image AI generation directly into Adobe After Effects via ComfyUI.
 
+![Text2Image Panel](https://raw.githubusercontent.com/ckonteos80/Adobe-After-Effects-ComfyUI-Panels/main/Screenshots/Text2ImagePanel.jpg)
+
 ## Features
 
 - **Text-to-Image Generation**: Generate AI images from text prompts without leaving After Effects
