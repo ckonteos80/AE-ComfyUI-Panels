@@ -31,7 +31,7 @@
     }
 
     header {
-      text-align: center;
+      text-align: left;
       padding: 3rem 1rem 2rem;
       background: linear-gradient(180deg, #141a22, var(--bg));
       border-bottom: 1px solid var(--line);
@@ -48,6 +48,22 @@
       margin: 2.25rem 0 1rem;
     }
 
+    h3 {
+      font-size: 1.4rem;
+      color: var(--fg);
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    h3 a {
+      color: var(--fg);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    h3 a:hover {
+      color: var(--accent);
+    }
+
     .container {
       max-width: var(--maxw);
       margin: 0 auto;
@@ -61,13 +77,13 @@
 
     ul, ol {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 0;
       padding-left: 1.25rem;
       text-align: left;
     }
 
     section {
-      text-align: center;
+      text-align: left;
       padding: 1.5rem 0;
     }
 
@@ -78,7 +94,7 @@
 
     iframe {
       display: block;
-      margin: 1.5rem auto;
+      margin: 1.5rem 0;
       border-radius: 12px;
       box-shadow: 0 0 25px rgba(0,0,0,.55);
       width: 100%;
@@ -89,7 +105,7 @@
 
     .feature-image {
       display: block;
-      margin: 2.5rem auto;
+      margin: 2.5rem 0;
       border-radius: 12px;
       max-width: 100%;
       height: auto;
@@ -116,7 +132,7 @@
 
     footer {
       margin-top: 3rem;
-      text-align: center;
+      text-align: left;
       font-size: 1rem;
       color: var(--muted);
       padding: 2rem 0;
@@ -132,8 +148,10 @@
 
 <body>
   <header>
-    <h1>🎬 AE-ComfyUI-Panels</h1>
-    <p class="lead">ScriptUI panels that connect Adobe After Effects with ComfyUI for AI-powered image generation</p>
+    <div class="container">
+      <h1>🎬 AE-ComfyUI-Panels</h1>
+      <p class="lead">ScriptUI panels that connect Adobe After Effects with ComfyUI for AI-powered image generation</p>
+    </div>
   </header>
 
   <main class="container">
@@ -167,13 +185,38 @@
     </section>
 
     <section>
-      <h2>🎨 Features</h2>
+      <h2>🎨 Panels</h2>
+      
+      <h3>📝 <a href="https://github.com/ckonteos80/Adobe-After-Effects-ComfyUI-Panels/tree/main/Text2Image" target="_blank">Text-to-Image Panel</a></h3>
       <ul>
-        <li>Text-to-Image panel: generate AI images from text prompts directly in AE</li>
-        <li>Image-to-Image panel: send a selected layer to ComfyUI and get styled/modified results</li>
-        <li>JSON metadata reader: inspect seed, CFG, steps, model, and other ComfyUI settings</li>
-        <li>Imports generated images (or sequences) back into your AE project automatically</li>
-        <li>Works with local ComfyUI setups on <code>http://127.0.0.1:8000</code></li>
+        <li>Generate AI images from text prompts directly in After Effects</li>
+        <li>Control resolution, steps, CFG, sampler, and scheduler settings</li>
+        <li>Support for positive and negative prompts</li>
+        <li>Automatic import of generated images into your AE project</li>
+        <li>Workflow caching for faster loading of previously used workflows</li>
+      </ul>
+
+      <h3>🖼️ <a href="https://github.com/ckonteos80/Adobe-After-Effects-ComfyUI-Panels/tree/main/Image2Image" target="_blank">Image-to-Image Panel</a></h3>
+      <ul>
+        <li>Send selected layers to ComfyUI for AI-powered modifications</li>
+        <li>Adjust denoise strength for controlling variation intensity</li>
+        <li>Generate multiple variations with seed control and denoise increments</li>
+        <li>Option to render with effects/transforms or use raw source files</li>
+        <li>Automatic upload and processing via ComfyUI's /upload/image API</li>
+      </ul>
+
+      <h3>📊 <a href="https://github.com/ckonteos80/Adobe-After-Effects-ComfyUI-Panels/tree/main/JsonReader" target="_blank">JSON Metadata Reader</a></h3>
+      <ul>
+        <li>Inspect ComfyUI generation metadata (seed, CFG, steps, model, etc.)</li>
+        <li>Extract workflow parameters from generated images</li>
+        <li>Log settings for reproducibility and documentation</li>
+      </ul>
+
+      <h3>🔧 Additional Features</h3>
+      <ul>
+        <li>Works with local ComfyUI setups (default: <code>http://127.0.0.1:8188</code>)</li>
+        <li>Dynamic API introspection for sampler and scheduler options</li>
+        <li>Persistent settings and workflow caching</li>
         <li>MIT-licensed, open for personal and commercial use</li>
       </ul>
     </section>
